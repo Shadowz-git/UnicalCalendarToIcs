@@ -12,10 +12,10 @@ MESI = [9, 10, 11, 12]
 ANNO_CORSO = 3
 ANNO_ACCADEMICO = 2024
 ANNO_ATTUALE = datetime.now().year
-CONTROLLO_GRUPPI = False
+CONTROLLO_GRUPPI = True
 # A = Lunedì/Mercoledì/Venerdì Mattina e Martedì/Giovedì Pomeriggio
 # B = Martedì/Giovedì Mattina e Lunedì/Mercoledì/Venerdì Pomeriggio
-GRUPPO_CONTROLLO = "A" # o B
+GRUPPO_CONTROLLO = "A" # A o B
 
 
 
@@ -92,7 +92,7 @@ def main() -> None:
             if CONTROLLO_GRUPPI and get_gruppo(data_inizio, data_fine) != GRUPPO_CONTROLLO:
                 continue
 
-            docente = "Non segnato" if len(data_calendario['docente']) == 0 else data_calendario['docente']
+            docente = "Non segnato" if len(data_calendario['docenti']) == 0 else (", ".join(data_calendario['docenti']))
 
             if not colori.get(str(data_calendario['insegnamento'])):
                 colori[str(data_calendario['insegnamento'])] = random.choice(lista_colori)
