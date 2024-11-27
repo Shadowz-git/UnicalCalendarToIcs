@@ -15,4 +15,4 @@ DOVREBBE funzionare perchè è scritto nella documentazione di iCalendar, ma non
 
 
 Se lo usate, na stellina non dispiace. <3
-_Sono accetti consigli e possibili miglioramenti (Discord: cryptidshadw) Ciau_
+_Sono accetti consigli e possibili miglioramenti (Discord: cryptidshadw) Ciau._
